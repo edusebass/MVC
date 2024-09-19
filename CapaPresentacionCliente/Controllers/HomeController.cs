@@ -26,5 +26,11 @@ namespace CapaPresentacionCliente.Controllers
 
             return View();
         }
+        public ActionResult PaginaTest()
+        {
+            ViewBag.Message = "Your contacdsfadfasdfst page.";
+
+            return View();
+        }
     }
 }
