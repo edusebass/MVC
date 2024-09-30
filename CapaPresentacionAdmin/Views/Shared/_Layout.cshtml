@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
-    @*@Scripts.Render("~/bundles/modernizr")*@
+    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -17,19 +17,6 @@
                 href="#!">
             <i class="fas fa-bars"></i>
         </button>
-        <!-- Navbar Search-->
-        @*<form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control"
-                       type="text"
-                       placeholder="Search for..."
-                       aria-label="Search for..."
-                       aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </form>*@
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
@@ -56,30 +43,30 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Resumen</div>
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-tachometer-alt"></i>
                             </div>
                             Dashboard
                         </a>
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="@Url.Action("Usuarios", "Home")">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-users"></i>
                             </div>
                             Usuarios
                         </a>
                         <div class="sb-sidenav-menu-heading">Mantenimiento</div>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="@Url.Action("Categoria", "Mantenedor")">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-table"></i>
                             </div>
                             Categoria
                         </a>
-                        <a class="nav-link" href="tables.html">
+                        <a class="nav-link" href="@Url.Action("Marca", "Mantenedor")">
                             <div class="sb-nav-link-icon"><i class="fas fa-bookmark"></i></div>
                             Marcas
                         </a>
-                        <a class="nav-link" href="tables.html">
+                        <a class="nav-link" href="@Url.Action("Producto", "Mantenedor")">
                             <div class="sb-nav-link-icon"><i class="fas fa-boxes"></i></div>
                             Productos
                         </a>
