@@ -12,4 +12,5 @@ namespace CapaEntidad
         public string Descripcion { get; set; }
         public Departamento oDepartamento { get; set; }
         public Provincia oProvincia { get; set; }
+    }
 }
