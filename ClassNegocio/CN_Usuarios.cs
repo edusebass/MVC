@@ -17,7 +17,6 @@ namespace ClassNegocio
             try
             {
                 List<Usuario> lista = objCapaDato.Listar();
-                Console.WriteLine($"CN_Usuarios: Se obtuvieron {lista.Count} usuarios");
                 return lista;
             }
             catch (Exception ex)

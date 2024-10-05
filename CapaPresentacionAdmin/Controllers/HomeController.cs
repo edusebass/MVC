@@ -19,7 +19,7 @@ namespace CapaPresentacionAdmin.Controllers
         {
             return View();
         }
-
+        [HttpGet]
         public JsonResult ListarUsuarios()
         {
             try
